@@ -44,8 +44,31 @@ Please check the official laravel installation guide for server requirements bef
 
 You can now access the server at http://localhost:8000
 
+## On cPanel
+
+* Compress the Laravel project folder.
+
+Compress the project flder to a zip file on your local machine. This allows for easy upload to the Cpanel.
+
+* Upload to Cpanel
+
+Login to your Cpanel account and head over to file manager and open the file manager
+On the file manager, create a new folder on the root directory and add a name to it and click on the newly created folder.
+
+* Extract the Laravel project folder
+
+Extract the files by right-clicking on the zip file. Extract them in the same folder you created in the previous step
 
 
+* Create a Database on phpmyAdmin:
+Go to the database tab in the Cpanel.
+Create a database.
+On the users section, create a user that will be associated with the databse.
+Add the user to the database, allowing the account to have all privileges on the database.
 
+* Update the .env
+Update the .env file with the new databse credentials
+
+* Export the mysql database data, and import it on the database you have newly created to get started.
 
 
