@@ -5,10 +5,13 @@
 ## Setup
 
 ### Prerequisites
--PHP >= 8.0
--Composer
--A web server (Apache, Nginx, etc.)
--MySQL or PostgreSQL
+* PHP >= 8.0
+* Composer
+* A web server (Apache, Nginx, etc.)
+* MySQL or PostgreSQL
+* Google App Password You can get this by following the steps bellow on this link https://knowledge.workspace.google.com/kb/how-to-create-app-passwords-000009237
+* Pusher app key on https://pusher.com/
+
 
 ## Installation
 
@@ -30,6 +33,10 @@ Please check the official laravel installation guide for server requirements bef
 * Run the database migrations (**Set the database connection in .env before migrating**)
 
     php artisan migrate
+  
+* Run the database seeder
+
+    php artisan db:seed
 
 * Start the local development server
 
